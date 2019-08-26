@@ -1,0 +1,73 @@
+body {
+    background: #fafafa;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #555;
+}
+
+.default {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#banner {
+	background: #111;
+    overflow: hidden;
+    width: $banner-width;
+    height: $banner-height;
+    opacity: 0;
+
+    #footer {
+        bottom:0;
+        position: absolute;
+    }
+
+    #resolve {
+        top:0;
+        position: absolute;
+    }
+
+    .txt {
+        top: -10px;
+        left: 0;
+        opacity:0;
+        position: absolute;
+    }
+
+
+    #curtain {
+        width: $banner-width;
+        height: $banner-height;
+        background: #006BFF;
+        opacity:0;
+    }
+
+
+    .container {
+        width: 76px;
+        height:100px;
+        overflow: hidden;
+        position: absolute;
+        left: 43px;
+        top: 26px;
+    }
+
+    #button-exit {
+        background-color: rgba(255, 255, 255, 0);
+        cursor: pointer;
+        height: 100%;
+        width: 100%;
+    }
+
+    #border {
+      display: block;
+      width: $banner-width;
+      height: $banner-height;
+      pointer-events: none;
+      outline: solid 1px #ccc;
+      outline-offset: -1px;
+      z-index: 999;
+  }
+
+
+}
