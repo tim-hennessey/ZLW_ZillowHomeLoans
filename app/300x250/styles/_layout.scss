@@ -42,6 +42,14 @@ body {
         opacity:0;
     }
 
+    #footer {
+        top: 0;
+        left: 0;
+        width: $banner-width;
+        height: $banner-height;
+        position: absolute;
+    }
+
 
     .container {
         width: 76px;
