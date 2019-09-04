@@ -15,6 +15,7 @@ app.Animation = (function () {
 	
 	var cta = document.getElementById('cta');
 	var curtain = document.getElementById('curtain');
+	var resolve = document.getElementsByClassName("resolve");
 	
 
 	// --------------------------------------------------------------------------------------
@@ -39,6 +40,8 @@ app.Animation = (function () {
 		.to(txt2b, .5, {y:"+=10", opacity: 1, ease: Sine.easeInOut})
 
 		.to(curtain, .75, {opacity: 1, onComplete: function () {tl2.play();}}, "+=1.5")
+
+		.set(resolve, {display: "block"})
 
 		.to(txt3, .5, {y:"+=10", opacity: 1, ease: Sine.easeInOut})
 
